@@ -1,1 +1,56 @@
 /*fancy place*/
+
+*{
+    
+    
+    margin: 5px;
+}
+
+h1{ 
+    text-align: center;
+
+}
+.container{
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    margin:20px;
+    flex-direction: row;
+   
+  
+}
+.buttons{
+    display:flex;
+    flex-direction: column;
+    
+}
+button{
+
+    border-radius: 5px;
+    color: white;
+    width: 60px;
+    height: 60px;
+    background-size: 100%;
+    border-style: none;
+    
+    
+
+    
+    
+    
+}
+
+button:hover{
+    background-color: rgb(66, 46, 88);
+    color: black;
+}
+
+#rock{
+    background-image: url("rock.png")
+}
+#paper{
+    background-image: url("images/pngwing.com.png")
+}
+#scissors{
+    background-image: url("images/scissors.png")
+}
