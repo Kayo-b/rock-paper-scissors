@@ -1,4 +1,6 @@
 const buttons = document.querySelectorAll("button");
+var counterCPU = 0;
+var counterHuman = 0;
 
 const play = function (values){
 
@@ -9,6 +11,12 @@ const play = function (values){
             // var result = getResults(jogada);
             let computer = random()
             let globalResult = versus(jogada,computer);
+            if(globalResult === "You win"){
+                counterHuman += 1;
+            }
+            else if(globalResult === "Computer wins"){
+                counterCPU += 1;
+            }
             document.getElementById("result").innerText = globalResult;
             document.getElementById("computer").innerHTML = computer;
             document.getElementById("human").innerText = jogada;
@@ -21,33 +29,6 @@ const play = function (values){
 }
 play(buttons);
 
-// for(let x in buttons){
-//     buttons[x].addEventListener("click", (e) => {
-//         // let result = getResults(document.getElementById(e.target.id));
-//         var jogada = e.target.id;
-//         var result = getResults(jogada);
-//         globalResult = result;
-//         console.log(globalResult)
-//         return false;
-//     });
-// }
-
-// function getResults(var1){
-//     x = var1+1123;
-//     return x;
-// }
-
-// console.log(globalResult)
-
-
-
-
-
-
-// var player1 = function getResults(var1){
-//         let x = var1;
-//         return x;
-//     }
 function versus(player1,computer){
 
     if(player1 === "rock" && computer === "scissors" || player1 === "paper" && computer === "rock" || player1 === "scissors" && computer === "paper" ){
@@ -60,11 +41,6 @@ function versus(player1,computer){
     
     
 }
-
-// alert("Computer plays " + computer)
-// alert(versus(player1,computer))
-
-// console.log(Math.floor(Math.random()*3))
 
 function random(){
     let result = Math.floor(Math.random()*3);
