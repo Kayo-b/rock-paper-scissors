@@ -1,0 +1,161 @@
+body{
+    background-color: rgba(192, 192, 192, 0.667);
+    
+}
+
+/* *{
+    margin: 5px;
+
+} */
+
+h1{
+    color:black;
+    display:flex;
+    height:20px;
+    flex: auto;
+    justify-content:space-around;
+
+}
+
+button {
+    border-radius: 5px;
+}
+
+.container{
+    display:flex;
+    flex:auto;
+    justify-content:space-around;
+    align-items: center;
+    
+
+
+}
+
+.container2{
+    display:flex;
+    flex:auto;
+    justify-content:space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 50px;
+    height: auto;
+}
+
+#finalResult{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+#rock {
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    height:50px;
+    margin:5px;
+    /* border: 3px solid black; */
+    /* border-radius: 5px; */
+
+
+}
+#paper {
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    height:50px;
+    margin:5px;
+    /* border: 3px solid black; */
+    /* border-radius: 5px; */
+
+
+}
+
+#score{
+    white-space: nowrap;
+    overflow-x: auto;
+}
+#player{
+    /* display:inline-block; */
+    padding-left: 20px;
+    float: left;
+}
+#computer{
+    /* display:inline-block; */
+    padding-left: 20px;
+    float: left;
+}
+p{
+    float: left;
+
+}
+#computador{
+    padding-left: 5px;
+    padding-top: 16px;
+    padding-right: 30px;
+    float: left;
+
+}
+#humano{
+    padding-left: 5px;
+    padding-top: 16px;;
+    padding-right: 71px;
+    float: left;
+   
+
+}
+
+#scoreHumano{
+    padding-left: 5px;
+    padding-right: 25px;
+    padding-top: 16px;;
+    float: left;
+
+}
+
+#scoreComputador{
+    padding-left: 5px;
+    padding-right: 20px;
+    padding-top: 16px;;
+    float: left;
+
+}
+
+#roundScoreH{
+    padding-left: 5px;
+    padding-top: 17px;;
+    float: left;
+
+}
+
+#roundScoreC{
+    padding-left: 5px;
+    padding-top: 17px;;
+    float: left;
+
+}
+
+#scissors {
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    height:50px;
+    margin:5px;
+    /* border: 3px solid black; */
+    /* border-radius: 5px; */
+
+
+}
+
+#scissors:hover {
+    color:blanchedalmond;
+    background-color: rgb(87, 81, 81);
+}
+#rock:hover {
+    color:blanchedalmond;
+    background-color: rgb(87, 81, 81);
+}
+#paper:hover {
+    color:blanchedalmond;
+    background-color: rgb(87, 81, 81);
+}
