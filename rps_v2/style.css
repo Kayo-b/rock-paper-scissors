@@ -1,14 +1,15 @@
 body{
-    background-color: rgba(192, 192, 192, 0.667);
+    background-color: rgba(31, 59, 55, 0.667);
     
 }
 
-/* *{
-    margin: 5px;
+*{
+    margin-left: 0px;
+    margin-right: 0px;
 
-} */
+}
 
-h1{
+h1, h3{
     color:black;
     display:flex;
     height:20px;
@@ -20,6 +21,12 @@ h1{
 button {
     border-radius: 5px;
 }
+
+/* #allScores{
+    display:flex;
+    
+    
+} */
 
 .container{
     display:flex;
@@ -39,14 +46,17 @@ button {
     flex-direction: column;
     width: 50px;
     height: auto;
+
 }
 
 #finalResult{
     display: flex;
     justify-content:center;
     align-items:center;
-
+    background: rgb(197, 96, 96);
+ 
 }
+
 
 #rock {
     display: flex;
@@ -54,6 +64,7 @@ button {
     align-items:center;
     height:50px;
     margin:5px;
+    background-color:rgb(165, 119, 50)
     /* border: 3px solid black; */
     /* border-radius: 5px; */
 
@@ -65,21 +76,55 @@ button {
     align-items:center;
     height:50px;
     margin:5px;
+    background-color: rgb(163, 155, 155);
     /* border: 3px solid black; */
     /* border-radius: 5px; */
 
 
 }
 
+#scissors {
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    height:50px;
+    margin:5px;
+    background-color: rgb(131, 197, 228);
+    /* border: 3px solid black; */
+    /* border-radius: 5px; */
+
+
+}
+
+
 #score{
     white-space: nowrap;
     overflow-x: auto;
+    background-color: rgb(16, 63, 63);
+    border: solid black;
+    padding: 5px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
-#player{
+
+#scoreCPU{
+    white-space: nowrap;
+    overflow-x: auto;
+    background-color: rgb(6, 43, 43);
+    border: solid black;
+    border-top: 0px;
+    padding: 5px;
+
+}
+/* .player{
     /* display:inline-block; */
-    padding-left: 20px;
+    /* padding-left: 20px;
     float: left;
-}
+   
+} */ */
+
 #computer{
     /* display:inline-block; */
     padding-left: 20px;
@@ -91,59 +136,49 @@ p{
 }
 #computador{
     padding-left: 5px;
-    padding-top: 16px;
-    padding-right: 30px;
+    padding-top: 0px;
+    padding-right: 0px;
     float: left;
+    
+    
 
 }
 #humano{
     padding-left: 5px;
-    padding-top: 16px;;
-    padding-right: 71px;
+    padding-top: 0px;;
+    padding-right: 0px;
     float: left;
-   
+    
 
 }
 
 #scoreHumano{
     padding-left: 5px;
-    padding-right: 25px;
-    padding-top: 16px;;
+    padding-right: 0px;
+    padding-top: 0px;;
     float: left;
 
 }
 
 #scoreComputador{
     padding-left: 5px;
-    padding-right: 20px;
-    padding-top: 16px;;
+    padding-right: 0px;
+    padding-top: 0px;;
     float: left;
 
 }
 
 #roundScoreH{
     padding-left: 5px;
-    padding-top: 17px;;
+    padding-top: 0px;;
     float: left;
 
 }
 
 #roundScoreC{
     padding-left: 5px;
-    padding-top: 17px;;
+    padding-top: 0px;;
     float: left;
-
-}
-
-#scissors {
-    display: flex;
-    justify-content:space-around;
-    align-items:center;
-    height:50px;
-    margin:5px;
-    /* border: 3px solid black; */
-    /* border-radius: 5px; */
-
 
 }
 
@@ -158,4 +193,27 @@ p{
 #paper:hover {
     color:blanchedalmond;
     background-color: rgb(87, 81, 81);
+}
+
+.player{
+    background: solid rgb(13, 9, 34);
+    color: rgb(253, 253, 253);
+    width: 250px;
+    height: auto;
+    
+}
+
+
+.CPU{
+    background: solid rgb(13, 9, 34);
+    color: rgb(255, 255, 255);
+    width: 250px;
+    height: auto;
+    
+}
+
+.space{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
 }
